@@ -1,5 +1,6 @@
 package gomemo
 
+// Memoize is a function that takes a function and returns a memoized version of that function.
 func Memoize[
 	IN comparable,
 	OUT any,
@@ -22,6 +23,8 @@ func Memoize[
 	}
 }
 
+// MemoizeWithHasher is a function that takes a function and returns a memoized version of that function.
+// It takes a hasher function that is used to generate a key for the cache.
 func MemoizeWithHasher[
 	IN comparable,
 	OUT any,
